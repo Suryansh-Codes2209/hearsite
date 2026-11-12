@@ -80,6 +80,18 @@ hearsite example.com --rate 170 --voice Samantha
 | `--mobile` | Phone viewport, 390 wide with touch | off |
 | `--scale <n>` | Pixel density; `2` gives a sharper video | `1` |
 
+## Use it from Claude Code
+
+This repo is also a Claude Code plugin with a skill that teaches Claude when and how to run `hearsite`.
+
+```
+/plugin install hearsite --marketplace Suryansh-Codes2209/hearsite
+```
+
+Then ask Claude for things like "what does a screen reader say on localhost:3000, and fix what's wrong".
+
+For other agents that read skills, copy the `skills/hearsite` folder into the agent's skills directory.
+
 ## How it works
 
 1. Playwright opens the page in headless Chromium.

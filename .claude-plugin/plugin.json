@@ -1,0 +1,10 @@
+{
+  "name": "hearsite",
+  "description": "Hear and read what a screen reader announces on a web page, as a narrated video and transcript.",
+  "version": "0.1.0",
+  "author": { "name": "Suryansh-Codes2209" },
+  "homepage": "https://github.com/Suryansh-Codes2209/hearsite",
+  "repository": "https://github.com/Suryansh-Codes2209/hearsite",
+  "license": "MIT",
+  "keywords": ["accessibility", "a11y", "screen-reader", "video"]
+}

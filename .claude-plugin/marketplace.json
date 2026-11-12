@@ -1,0 +1,14 @@
+{
+  "name": "hearsite",
+  "description": "Hear and read what a screen reader announces on a web page, as a narrated video and transcript.",
+  "owner": {
+    "name": "Suryansh-Codes2209"
+  },
+  "plugins": [
+    {
+      "name": "hearsite",
+      "source": "./",
+      "description": "Hear and read what a screen reader announces on a web page, as a narrated video and transcript."
+    }
+  ]
+}
