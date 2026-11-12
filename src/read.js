@@ -56,7 +56,8 @@ export function announcements(nodes) {
     if (node.ignored) return recurse();
 
     const role = node.role?.value ?? '';
-    const name = clean(node.name?.value);
+    // A tooltip (title attribute) is announced when there is no other name.
+    const name = clean(node.name?.value) || clean(node.description?.value);
     if (SKIP.has(role)) return;
 
     switch (role) {
@@ -65,7 +66,8 @@ export function announcements(nodes) {
         return recurse();
 
       case 'StaticText':
-        if (name) emit(node, 'text', name);
+        // Separators such as "|" carry no words; leave them out.
+        if (/[\p{L}\p{N}]/u.test(name)) emit(node, 'text', name);
         return;
 
       case 'heading': {
