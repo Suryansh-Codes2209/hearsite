@@ -1,0 +1,5 @@
+node_modules
+*.mp4
+*.txt
+demo/
+.DS_Store
