@@ -8,7 +8,9 @@ npx hearsite https://example.com
 
 One command turns a URL into a narrated video: the page on screen, an outline moving to each element in reading order, and a voice saying what a screen reader would announce, with captions. It ends with a list of what a listener runs into, such as images with no description and buttons with no name.
 
-<!-- Add a demo video or GIF here. -->
+![hearsite reading the Hacker News front page: an outline moves from link to link while captions show what is announced](docs/demo.gif)
+
+*The Hacker News front page: 322 announcements, about 4 minutes of listening. The GIF is silent; [watch it with sound](docs/demo.mp4).*
 
 ## Why
 
